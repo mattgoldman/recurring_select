@@ -63,9 +63,7 @@ module RecurringSelectHelper
       }
     end
   end
-end
-
-module RecurringSelectHelper
+  
   module SelectHTMLOptions
     private
 
@@ -117,9 +115,7 @@ module RecurringSelectHelper
       end
     end
   end
-end
-
-module RecurringSelectHelper
+  
   module FormHelper
     def select_recurring(object, method, default_schedules = nil, options = {}, html_options = {})
       if defined?(RecurringSelectHelper::RecurringSelectTag)

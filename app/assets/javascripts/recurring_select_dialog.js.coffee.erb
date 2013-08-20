@@ -152,9 +152,9 @@ window.RecurringSelectDialog =
         rule_str = @current_rule.str.replace("*", "")
         rule_regex = rule_str.match(/(.*) on the .* hour of the day on the .* minute of the hour on the .* second of the minute/)
         
-        if(rule_regex){
-          rule_str = rule_regex[1];
-        }
+        if(rule_regex)
+          rule_str = rule_regex[1]
+        
         
         if rule_str.length < 20
           rule_str = "#{$.fn.recurring_select.texts["summary"]}: "+rule_str
